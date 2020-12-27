@@ -9,12 +9,12 @@ def headers():
     print(Fore.RED,(figlet_format(header)))
     header=(Fore.RED+"""
 ####################################################################            
-**           .::Name is apps :: .:GHOST KILLER:.                  **                                                         
+**           .::Name is apps :: .:GHOST KILLER:.                  ** **                                                         	  **
 **                *Producer* || *SAJAD.CH*                        **
 **          .::Programmer::. :: .::SAJAD.CH::.                    **
 **              *Works is*   || *By offensive Security Pen Test*  **
 **          .::Tools::.      :: .::[port scan \ ip finder         **
-**                           || cmd \ se.. dir,file and more...]  **                        ::                                                       
+**                           || cmd \ se.. dir,file and more...]  ** **                        ::                                      **                 
 ####################################################################
 """)
     print(header)

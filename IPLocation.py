@@ -4,7 +4,7 @@ init()
 from colorama import Fore
 import sys
 import requests
-import ipapi
+#import ipapi
 def IpLocation():
     os.system('cls')
     print(Fore.GREEN+'[*]',Fore.BLUE+'Welcome To IPLocation\n')

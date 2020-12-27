@@ -14,11 +14,11 @@ from WEBSection import WEB
 def GHOSTKILLER(): 
     os.system('cls')
     headers()
-    WE=(Fore.GREEN+'[*]'+Fore.BLUE+'Welcome To GHOST KILLER ((:\n')
+    WE=(Fore.GREEN+'[*]'+Fore.LIGHTBLUE_EX+'Welcome To GHOST KILLER ((:\n')
     print(WE.center(65))
-    print(Fore.RED+'[{}]'.format('1')+Fore.BLUE+'WEB Section\n')
-    print(Fore.RED+'[{}]'.format('2')+Fore.BLUE+'Client Section\n')
-    SECL=input(Fore.GREEN+'[!]'+Fore.BLUE+'┌─[Enter Number Section To Go The That\n'+Fore.BLUE+'   └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'卐')
+    print(Fore.RED+'[{}]'.format('1')+Fore.LIGHTBLUE_EX+'WEB Section\n')
+    print(Fore.RED+'[{}]'.format('2')+Fore.LIGHTBLUE_EX+'Client Section\n')
+    SECL=input(Fore.GREEN+'[!]'+Fore.LIGHTBLUE_EX+'┌─[Enter Number Section To Go The That\n'+Fore.LIGHTBLUE_EX+'   └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'卐')
     if SECL == '1':
         os.system('cls')
         headers()
