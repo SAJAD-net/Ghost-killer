@@ -3,6 +3,7 @@ import requests
 from colorama import Fore,init
 init()
 import sys
+from Banner import headers
 def PortScanner():
     os.system("clear") if os.name == "posix" else  os.system('cls')
     headers()
