@@ -48,5 +48,5 @@ def GHOSTKILLER():
             input("Press Enter to quit "+Fore.RED+"✗ ")
             exit()
         else:
-            input('Field,It Is Not Found, Press Enter To Back\n'+Fore.BLUE+'   └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'✗ ')
+            input('Field, it is not found, Press enter to back\n'+Fore.BLUE+'   └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'✗  ')
 GHOSTKILLER()
