@@ -2,15 +2,10 @@ import os, sys
 from colorama import Fore,init
 init()
 from src.Banner import headers
-from src.CloudFlare import CloudFlare
-from src.HttpHeaders import HttpHeaders
-from src.IPLocation import IpLocation
-from src.PortScanner import PortScanner
-from src.ReversIP import ReversIP
-from src.Whois import Whois
+
+
+@headers
 def GHOSTKILLER(): 
-    os.system("clear") if os.name == "posix" else os.system('cls')
-    headers()
     print(Fore.GREEN+'[*]- '+Fore.LIGHTBLUE_EX+'Welcome To GHOST-KILLER (H4CK3R) V1.0\n')
     Tools=["CloudeFlare",
     "HttpHeaders",
@@ -31,22 +26,21 @@ def GHOSTKILLER():
             count+=1
             c+=1
         print("")
-        Self=input(Fore.GREEN+'[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Enter Number To Go The Tools ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+        Self=input(Fore.GREEN+'[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Enter Number To Go The Tools ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
         if Self == '1':
-            CloudFlare()
+            import src.CloudFlare.CloudFlare
         elif Self == '2':
-            HttpHeaders()
+            import src.HttpHeaders.HttpHeaders
         elif Self == '3':
-            IpLocation()
+            import src.IPLocation.IpLocation
         elif Self == '4':
-            PortScanner()
+            import src.PortScanner.PortScanner
         elif Self == '5':
-            ReversIP()
+            import src.ReversIP.ReversIP
         elif Self == '6':
-            Whois()
+            import src.Whois.Whois
         elif Self == "quit":
-            input("Press Enter to quit "+Fore.RED+"✗ ")
             exit()
         else:
-            input('Field, it is not found, Press enter to back\n'+Fore.BLUE+'   └──╼ '+Fore.GREEN+'SCH '+Fore.RED+'✗  ')
-GHOSTKILLER()
+            input(Fore.LIGHTRED_EX+'[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Field, Press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+            exit()
