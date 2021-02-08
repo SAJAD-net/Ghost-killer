@@ -3,44 +3,77 @@ from colorama import Fore,init
 init()
 from src.Banner import headers
 
-
 @headers
 def GHOSTKILLER(): 
-    print(Fore.GREEN+'[*]- '+Fore.LIGHTBLUE_EX+'Welcome To GHOST-KILLER (H4CK3R) V1.0\n')
-    Tools=["CloudeFlare",
-    "HttpHeaders",
-    "IPLocation",
-    "PortScanner",
-    "ReversIP",
-    "Whois",]
     while True:
-        count = 1
-        c=0
-        for i in range(len(Tools)//2):
-            print(Fore.LIGHTRED_EX+f'[{count}]- ',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="")
-            count+=1
-            c+=1
-            if c == 5:
-                print("\t",end="")
-            print(Fore.LIGHTRED_EX+f'[{count}]- ',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="\n") 
-            count+=1
-            c+=1
-        print("")
-        Self=input(Fore.GREEN+'[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Enter Number To Go The Tools ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
-        if Self == '1':
-            import src.CloudFlare.CloudFlare
-        elif Self == '2':
-            import src.HttpHeaders.HttpHeaders
-        elif Self == '3':
-            import src.IPLocation.IpLocation
-        elif Self == '4':
-            import src.PortScanner.PortScanner
-        elif Self == '5':
-            import src.ReversIP.ReversIP
-        elif Self == '6':
-            import src.Whois.Whois
-        elif Self == "quit":
-            exit()
-        else:
-            input(Fore.LIGHTRED_EX+'[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Field, Press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
-            exit()
+        print(Fore.GREEN+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.0 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`\n")
+        Tools=["CloudeFlare",
+        "HttpHeaders",
+        "IPLocation",
+        "Revers-IP",
+        "Dns-Lookup",
+        "PortScanner",
+        "Cms-Detect",
+        "Robot's-Scanner",
+        "Trace-Route",
+        "SharedDnsFinder",
+        "Whois",
+        "AdminPageFinder"]
+        while True:
+            count = 1
+            c=0
+            for i in range(len(Tools)):
+                # print(Fore.LIGHTRED_EX+f'\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="")
+                # count+=1
+                # c+=1
+                if len(str(count)) == 1:
+                    if count % 3 == 0 or count == 5 or count == 7:
+                        if count != 6:
+                            print("")
+                    print(Fore.LIGHTRED_EX+f'\t[0{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="")
+                    count+=1
+                    c+=1
+                elif count == 11:
+                    print(Fore.LIGHTRED_EX+f'\n\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="")
+                    count+=1
+                    c+=1
+                elif count == 12:
+                    print(Fore.LIGHTRED_EX+f'\t\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="\n") 
+                    break
+                elif c == 5:
+                    print("\t",end="")
+                else:
+                    print(Fore.LIGHTRED_EX+f'\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="") 
+                    count+=1
+                    c+=1
+            Self=input(Fore.GREEN+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Enter Number To Go The Tools ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+            if Self == '1' or Self == '01':
+                import src.cloudflare.cloudeflare
+            elif Self == '2' or Self == '02':
+                import src.httpheaders.httpheaders
+            elif Self == '3' or Self == '03':
+                import src.iplocation.iplocation
+            elif Self == '4' or Self == '04':
+                import src.reversip.reversip
+            elif Self == '5' or Self == '05':
+                import src.dnslookup.dnslookup
+                
+            elif Self == '6' or Self == "06":
+                import src.portscanner.portscanner
+            elif Self == '7' or Self == "07":
+                import src.cms.cms
+            elif Self == '8' or Self == "08":
+                import src.robots.robots
+            elif Self == '9' or Self == "09":
+                import src.traceroute.traceroute
+            elif Self == '10' or Self == "10":
+                import src.findsharedns.fsd
+            elif Self == '11' or Self == "11":
+                import src.whois.whois
+            elif Self == '12' or Self == "12":
+                import src.finder.finder
+            elif Self == "quit":
+                exit()
+            else:
+                input(Fore.LIGHTRED_EX+'[!]- '+Fore.LIGHTBLUE_EX+'┌─[Field, Press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+                exit()

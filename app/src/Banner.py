@@ -10,10 +10,8 @@ def headers(fun):
     ██║  ███╗███████║██║   ██║███████╗   ██║█████╗█████╔╝
     ██║   ██║██╔══██║██║   ██║╚════██║   ██║╚════╝██╔═██╗
     ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║  ██╗
-     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝
-     """)
-        print(Fore.LIGHTBLUE_EX+"\t"*4,"GHOST-KILLER V1.0\n"\
-        ,"\t"*4,"Programmer :: "+Fore.RED+"SAJAD-CHEHRAZI\n")
+     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝""")
+        print(Fore.LIGHTBLUE_EX+"\t"*4,"Programmer :: "+Fore.RED+"SAJAD-CHEHRAZI\n")
         fun()
     return wrapper()
 
