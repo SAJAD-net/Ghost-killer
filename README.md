@@ -7,12 +7,11 @@
 
 ## This app using followin library:
 	1- requests
-	2- json
-	3- colorama
-	4- bs4
-	5- os
-	6- sys
-	7- ...
+	2- ipapi
+	3- json
+	4- colorama
+	5- bs4
+
 ## How to Run:
 	pip3 install requests
 	pip3 install colorama
