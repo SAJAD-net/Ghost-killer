@@ -67,10 +67,10 @@ def installer():
             for i in os.listdir(home+"/"):
                 if i == ".zshrc":
                     with open(".zshrc", "a") as file:
-                        file.write("alias ghost=\"python3.9 $HOME/.GhostKiller/app/GHOSTKILLER.py\"")
+                        file.write("alias ghost=\"python3 $HOME/.GhostKiller/app/GHOSTKILLER.py\"")
                 elif i == ".bashrc":
                     with open(".bashrc", "a") as file:
-                        file.write("alias ghost=\"python3.9 $HOME/.GhostKiller/app/GHOSTKILLER.py\"")
+                        file.write("alias ghost=\"python3 $HOME/.GhostKiller/app/GHOSTKILLER.py\"")
    
             
             print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}Copide all file to {home}/.GhostKiller !")
