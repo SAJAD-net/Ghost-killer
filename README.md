@@ -9,7 +9,7 @@
 ![ghost-k](https://user-images.githubusercontent.com/71703544/108708642-b352a900-74df-11eb-89d6-77515ee5198d.png)
 
 
-## using followin library:
+## use followin library:
 	1- requests
 	2- ipapi
 	3- json
