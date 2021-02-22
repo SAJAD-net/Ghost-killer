@@ -13,13 +13,15 @@ while True:
             url = input(f"\n{Fore.GREEN}[!]- {Fore.LIGHTBLUE_EX}┌─[Enter Domain ...\n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.GREEN}GHOST-K {Fore.RED}✗  "+Fore.LIGHTBLUE_EX)
             if url == "quit":
                 exit()
+            if url == "0":
+                import src.chdir
             elif 'https://' not  in url and 'http://' not in url:
                 url = 'http://'+url
-            with open("lib/Robots.txt", "r") as robot:
+            with open("src/lib/robots.txt", "r") as robot:
                     for line in robot.readlines():
-                        ur = (url+"/"+i)
+                        ur = (url+"/"line)
                         reqs = requests.get(ur)
-                        if reqs.status_code == 200 or reqs.status_code == 405:
+                        if reqs.status_code == 200:
                             print(Fore.GREEN+"["+Fore.LIGHTRED_EX+"+"+Fore.GREEN+"]- "+Fore.LIGHTBLUE_EX+ur)
                         else:
                             print(Fore.LIGHTRED_EX+"["+Fore.LIGHTBLUE_EX+"+"+Fore.LIGHTRED_EX+"]- "+Fore.LIGHTBLUE_EX+ur)
