@@ -29,7 +29,7 @@
 		pip3 install bs4
 		pip3 install ipapi
 	
-		python3 GHOSTKILLER.py.py 
+		python3 GHOSTKILLER.py
 	
 
 
