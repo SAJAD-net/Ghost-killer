@@ -11,13 +11,15 @@
 	3- json
 	4- colorama
 	5- bs4
+	6- ...
 
 ## How to Run:
 	pip3 install requests
 	pip3 install colorama
 	pip3 install bs4
+	pip3 install ipapi
 	
-	python3 Ghost-Killer.py 
+	python3 installer.py  OR python3 GHOSTKILLER.py.py 
 
 
 my email : sajadsajad.sch@gmail.com
