@@ -20,7 +20,7 @@
 ## How to Run:
 	1- The first method:
 		1-python3 installer.py
-		2-restart computer
+		2-open new shell
 		3-type ghost in terminal
 		
 	2− The second method:
