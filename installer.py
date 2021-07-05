@@ -1,4 +1,4 @@
-import os, shutil
+import os, shutil, readline
 from colorama import Fore, init
 init()
 from app.src.Banner import headers
