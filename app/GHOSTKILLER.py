@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, readline
 from colorama import Fore,init
 init()
 from src.Banner import headers

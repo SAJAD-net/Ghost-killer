@@ -1,4 +1,4 @@
-import requests, builtwith
+import requests, builtwith, readline
 from colorama import Fore, init
 init()
 from src.Banner import headers

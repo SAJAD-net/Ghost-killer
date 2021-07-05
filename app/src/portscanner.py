@@ -1,5 +1,5 @@
 import sys,os
-import requests
+import requests, readline
 from colorama import Fore,init
 init()
 import sys

@@ -1,6 +1,6 @@
 from colorama import Fore,init
 init()
-import requests
+import requests, readline
 from src.Banner import headers
 while True:
 

@@ -1,7 +1,7 @@
 from colorama import Fore,init
 init()
 from src.Banner import headers
-import requests
+import requests, readline
 import ipapi
 while True:
     @headers

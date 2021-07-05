@@ -1,4 +1,4 @@
-import requests
+import requests, readline
 import time
 from colorama import Fore, init
 init()
