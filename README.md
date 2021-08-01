@@ -5,7 +5,7 @@
 
 
 ## PreView
-![ghost](https://user-images.githubusercontent.com/71703544/127768895-cde063a3-bcc6-4915-9f3b-cf172115e1b4.png)
+![ghost](https://user-images.githubusercontent.com/71703544/127781207-741bb381-4244-4e37-9c5f-8494cd6d9425.png)
 
 ## use followin library:
 	1- requests
