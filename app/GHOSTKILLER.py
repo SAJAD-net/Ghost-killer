@@ -43,7 +43,7 @@ def GHOSTKILLER():
                     print(Fore.LIGHTRED_EX+f'\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="") 
                     count+=1
                     c+=1
-            Self=input(Fore.YELLOW+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[enter number to chode tool ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+            Self=input(Fore.YELLOW+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[enter number to chose tool ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
             if Self == '1' or Self == '01':
                 import src.cloudflare.cloudeflare
             elif Self == '2' or Self == '02':
