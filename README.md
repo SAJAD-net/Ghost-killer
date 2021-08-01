@@ -1,13 +1,11 @@
 # Ghost-Killer
 
 
-### This is a penetration test tool for information gathering ...
+### This is a penetration test tool for information gathering.
 
 
 ## PreView
-
-![ghost-k](https://user-images.githubusercontent.com/71703544/108708642-b352a900-74df-11eb-89d6-77515ee5198d.png)
-
+![ghost](https://user-images.githubusercontent.com/71703544/127768895-cde063a3-bcc6-4915-9f3b-cf172115e1b4.png)
 
 ## use followin library:
 	1- requests
@@ -33,4 +31,4 @@
 	
 
 
-my email : sajadsajad.sch@gmail.com
+## my email : sajadsajad.sch@gmail.com
