@@ -7,9 +7,9 @@ while True:
 
     @headers
     def finder():
-        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To Url-Finder Part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to url-finder part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
         try:
-            url = input(f"\n{Fore.GREEN}[!]-{Fore.LIGHTBLUE_EX}┌─[Enter The Website Address ...\n{Fore.LIGHTBLUE_EX}    └──╼ {Fore.GREEN}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
+            url = input(f"\n{Fore.YELLOW}[!]-{Fore.LIGHTBLUE_EX}┌─[enter the website address ...\n{Fore.LIGHTBLUE_EX}    └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
             if url == "quit":
                 exit()
             if url == "0":
@@ -20,13 +20,13 @@ while True:
                 for i in find.readlines():
                     r = requests.get(url+"/"+i)
                     if r.status_code == 200:
-                        print(f'{Fore.LIGHTBLUE_EX}[{Fore.LIGHTRED_EX}+{Fore.LIGHTBLUE_EX}]-  {Fore.LIGHTBLUE_EX}{url}"/"{i} {Fore.LIGHTGREEN_EX}  Found ')
+                        print(f'{Fore.LIGHTBLUE_EX}[{Fore.LIGHTRED_EX}+{Fore.LIGHTBLUE_EX}]-  {Fore.LIGHTBLUE_EX}{url}"/"{i} {Fore.LIGHTYELLOW_EX} [ok] ')
                     else:
-                        print(f'{Fore.LIGHTRED_EX}[{Fore.LIGHTBLUE_EX}+{Fore.LIGHTRED_EX}]-  {Fore.LIGHTBLUE_EX}{url}{i} {Fore.LIGHTRED_EX} Not Found ')
+                        print(f'{Fore.LIGHTRED_EX}[{Fore.LIGHTBLUE_EX}+{Fore.LIGHTRED_EX}]-  {Fore.LIGHTBLUE_EX}{url}{i} {Fore.LIGHTRED_EX} [no] ')
                
                 find.close()
-                input(f'{Fore.GREEN}[{Fore.LIGHTRED_EX}+{Fore.GREEN}]- {Fore.LIGHTBLUE_EX}┌─[Press Enter to back ... \n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.GREEN}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
+                input(f'{Fore.YELLOW}[{Fore.LIGHTRED_EX}+{Fore.YELLOW}]- {Fore.LIGHTBLUE_EX}┌─[press enter to back ... \n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
         except:
             
-            input(f'{Fore.LIGHTRED_EX}[{Fore.LIGHTBLUE_EX}+{Fore.LIGHTRED_EX}]- {Fore.LIGHTBLUE_EX}┌─[Error, Press Enter to back ... \n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.GREEN}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
+            input(f'{Fore.LIGHTRED_EX}[{Fore.LIGHTBLUE_EX}+{Fore.LIGHTRED_EX}]- {Fore.LIGHTBLUE_EX}┌─[error, press enter to back ... \n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
 

@@ -6,26 +6,23 @@ from src.Banner import headers
 @headers
 def GHOSTKILLER(): 
     while True:
-        print(Fore.GREEN+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.0 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`\n")
-        Tools=["CloudeFlare",
-        "HttpHeaders",
-        "IPLocation",
-        "Revers-IP",
-        "Dns-Lookup",
-        "PortScanner",
-        "Cms-Detect",
-        "Robot's-Scanner",
-        "Trace-Route",
-        "SharedDnsFinder",
-        "Whois",
-        "AdminPageFinder"]
+        print(Fore.YELLOW+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.0 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`\n")
+        Tools=["cloudeflare",
+        "httpHeaders",
+        "iplocation",
+        "reversip",
+        "dnsLookup",
+        "portScanner",
+        "cmsDetect",
+        "robotsScanner",
+        "traceRoute",
+        "sharedDnss",
+        "whois",
+        "adminPages"]
         while True:
             count = 1
             c=0
             for i in range(len(Tools)):
-                # print(Fore.LIGHTRED_EX+f'\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="")
-                # count+=1
-                # c+=1
                 if len(str(count)) == 1:
                     if count % 3 == 0 or count == 5 or count == 7:
                         if count != 6:
@@ -46,7 +43,7 @@ def GHOSTKILLER():
                     print(Fore.LIGHTRED_EX+f'\t[{count}]-',Fore.LIGHTBLUE_EX+Tools[c],"\t",end="") 
                     count+=1
                     c+=1
-            Self=input(Fore.GREEN+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[Enter Number To Go The Tools ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+            Self=input(Fore.YELLOW+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[enter number to chode tool ((:\n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
             if Self == '1' or Self == '01':
                 import src.cloudflare.cloudeflare
             elif Self == '2' or Self == '02':
@@ -75,5 +72,5 @@ def GHOSTKILLER():
             elif Self == "quit":
                 exit()
             else:
-                input(Fore.LIGHTRED_EX+'[!]- '+Fore.LIGHTBLUE_EX+'┌─[Field, Press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.GREEN+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+                input(Fore.LIGHTRED_EX+'[!]- '+Fore.LIGHTBLUE_EX+'┌─[field, press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
                 exit()

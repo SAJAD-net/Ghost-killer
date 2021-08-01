@@ -11,7 +11,7 @@ def headers(fun):
     ██║   ██║██╔══██║██║   ██║╚════██║   ██║╚════╝██╔═██╗
     ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║  ██╗
      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝""")
-        print(Fore.LIGHTBLUE_EX+"\t"*4,"Programmer :: "+Fore.RED+"SAJAD-CHEHRAZI\n")
+        print(Fore.LIGHTBLUE_EX+"\t"*4,"Programmer :: "+Fore.YELLOW+"SAJAD-CHEHRAZI\n")
         fun()
     return wrapper()
 
