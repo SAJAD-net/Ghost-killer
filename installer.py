@@ -74,8 +74,7 @@ def installer():
    
             
             print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}Copide all file to {home}/.GhostKiller !")
-            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}your computer should be restart !")
-            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}You can type ghost to running a GhostKiller app !")
+            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}You can type ghost in new shell to running a GhostKiller app !")
             os.chdir(pwd)
         except FileExistsError:
             print(Fore.LIGHTRED_EX+"[+]- "+Fore.LIGHTBLUE_EX+"This are also installed")
