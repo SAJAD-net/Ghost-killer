@@ -1,34 +1,28 @@
-# Ghost-Killer
+# *Ghost-Killer* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  <img src="https://img.shields.io/badge/Python%20version-up to date-red"></img>    <img src="https://img.shields.io/badge/version-0.5-yellow"></img>
 
 
-### This is a penetration test tool for information gathering.
+### *information gathering tool*
 
+			      ██████╗██╗  ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗
+			    ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝   ██║ ██╔
+			    ██║  ███╗███████║██║   ██║███████╗   ██║█████╗█████╔╝
+			    ██║   ██║██╔══██║██║   ██║╚════██║   ██║╚════╝██╔═██╗
+			    ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║  ██╗
+			     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝
 
-## PreView
-![ghost](https://user-images.githubusercontent.com/71703544/127781207-741bb381-4244-4e37-9c5f-8494cd6d9425.png)
-
-## use followin library:
-	1- requests
-	2- ipapi
-	3- json
-	4- colorama
-	5- bs4
-	6- ...
-
-## How to Run:
-	1- The first method:
-		1-python3 installer.py
-		2-open new shell
-		3-type ghost in terminal
-		
-	2− The second method:
-		pip3 install requests
-		pip3 install colorama
-		pip3 install bs4
-		pip3 install ipapi
+## *installation*
+	git clone https://github.com/SAJAD-net/Ghost-killer.git
+	cd 'Ghost-killer'
+	python3 installer.py
 	
-		python3 GHOSTKILLER.py
-	
+## *Contributions*
 
+***All contributions are welcome!***
 
-## my email : sajadsajad.sch@gmail.com
+*fork the repository*
+
+*Found a problem, want to give a tip? open an issue.*
+
+*Do you have a solution to the problem? Send me a PR.*
+
+*Did you like this project? Click on the little star :)*
