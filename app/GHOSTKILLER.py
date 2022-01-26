@@ -69,8 +69,5 @@ def GHOSTKILLER():
                 import src.whois.whois
             elif Self == '12' or Self == "12":
                 import src.finder.finder
-            elif Self == "quit":
-                exit()
             else:
-                input(Fore.LIGHTRED_EX+'[!]- '+Fore.LIGHTBLUE_EX+'┌─[field, press enter to exit :( \n'+Fore.LIGHTBLUE_EX+'     └──╼ '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
                 exit()
