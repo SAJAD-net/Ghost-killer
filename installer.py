@@ -8,7 +8,7 @@ import re
 
 
 def modules():
-    lis = ["requests", "ipapi", "colorama", "bs4"]
+    lis = ["requests", "ipapi", "colorama", "bs4", "python-whois", "builtwith"]
     print(Fore.LIGHTRED_EX+"[i]- "+Fore.LIGHTBLUE_EX+"Intalling ...")
     for l in lis:
         try:
