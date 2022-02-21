@@ -9,22 +9,22 @@ import re
 
 def modules():
     lis = ["requests", "ipapi", "colorama", "bs4", "python-whois", "builtwith"]
-    print(Fore.LIGHTRED_EX+"[i]- "+Fore.LIGHTBLUE_EX+"Intalling ...")
+    print(Fore.LIGHTRED_EX+"[i]- "+Fore.LIGHTBLUE_EX+"intalling ...")
     for l in lis:
         try:
             os.system(f"python3.9 -m pip install {l}")
         except:
-            print(f"{Fore.LIGHTRED_EX}[!]- {Fore.LIGHTBLUE_EX}Check your conncetion !")
+            print(f"{Fore.LIGHTRED_EX}[!]- {Fore.LIGHTBLUE_EX}check your conncetion !")
             break
 
 @headers
 def installer():
-    
-    ins = input(f"{Fore.LIGHTRED_EX}[!]- {Fore.LIGHTBLUE_EX}Are want to install require modules [Y/N] ? ") 
+
+    ins = input(f"{Fore.LIGHTRED_EX}[!]- {Fore.LIGHTBLUE_EX}do you want to install requirement modules [Y/N] ? ")
     if ins.upper() == "Y":
         modules()
     else:
-        print(Fore.LIGHTRED_EX+"[i]- "+Fore.LIGHTBLUE_EX+"Installing ...")
+        print(Fore.LIGHTRED_EX+"[i]- "+Fore.LIGHTBLUE_EX+"installing ...")
         try:
             home=pathlib.Path.home()
             nhome=re.findall(r"\w*",str(home))
@@ -62,7 +62,7 @@ def installer():
                                     for z  in os.listdir("."):
                                         shutil.copy(z, lib)
                                     os.chdir("../")
-                            os.chdir(pwd+"/app")    
+                            os.chdir(pwd+"/app")
             os.chdir(home)
             for i in os.listdir(home+"/"):
                 if i == ".zshrc":
@@ -71,10 +71,10 @@ def installer():
                 elif i == ".bashrc":
                     with open(".bashrc", "a") as file:
                         file.write("alias ghost=\"python3 $HOME/.GhostKiller/app/GHOSTKILLER.py\"")
-   
-            
-            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}Copide all file to {home}/.GhostKiller !")
-            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}You can type ghost in new shell to running a GhostKiller app !")
+
+
+            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}all the files was copied to {home}/.GhostKiller !")
+            print(Fore.LIGHTRED_EX+f"[!]- {Fore.LIGHTBLUE_EX}you can type ghost in new shell to run the Ghost-Killer app !")
             os.chdir(pwd)
         except FileExistsError:
-            print(Fore.LIGHTRED_EX+"[+]- "+Fore.LIGHTBLUE_EX+"This are also installed")
+            print(Fore.LIGHTRED_EX+"[+]- "+Fore.LIGHTBLUE_EX+"Ghost-killer is already installed")
