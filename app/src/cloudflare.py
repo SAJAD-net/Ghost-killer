@@ -7,18 +7,21 @@ from socket import gethostbyname
 while True:
     @headers
     def cloudflare():
-        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To CloudFlare Bypass Part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to cloudFlare bypass part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
         subdomain=['ftp','localhost','host','webmail','local','mysql','vb','blog']
-        Addrss=input(f"\n{Fore.YELLOW}[!]-{Fore.LIGHTBLUE_EX}┌─[Please Enter The Target Website Address\n{Fore.LIGHTBLUE_EX}    └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
-        if Addrss == "0":
+        addrss=input(f"\n{Fore.YELLOW}[!]- {Fore.LIGHTBLUE_EX}┌─[enter the address\n{Fore.LIGHTBLUE_EX}     └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
+
+        if addrss == "0":
             import src.chdir
-        elif Addrss == "quit":
-            exit()   
+        elif addrss == "":
+            exit()
+
         for sub in subdomain:
             try:
-                Hosts=str(sub) + '.' + str(Addrss)
-                Bypass = gethostbyname(str(Hosts))
-                print(Fore.LIGHTBLUE_EX+'[!]-',Fore.LIGHTBLUE_EX+'CloudFlare Bypass --> ' + str(Bypass) + '::' + str(Hosts))
-            except:
-                input(f"\n{Fore.LIGHTRED_EX}[!]-{Fore.LIGHTBLUE_EX}┌─[Error, Press Enter to back \n{Fore.LIGHTBLUE_EX}    └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
+                hosts=str(sub) + '.' + str(addrss)
+                bypass = gethostbyname(str(hosts))
+                print(Fore.LIGHTBLUE_EX+'[!]-',Fore.LIGHTBLUE_EX+'cloudFlare bypass --> ' + str(bypass) + ':' + str(hosts))
+
+            except Exception:
+                input(f"\n{Fore.LIGHTRED_EX}[!]- {Fore.LIGHTBLUE_EX}┌─[error, press enter to return\n{Fore.LIGHTBLUE_EX}     └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
                 break

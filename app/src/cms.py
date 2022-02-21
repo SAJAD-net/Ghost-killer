@@ -7,21 +7,24 @@ while True:
 
     @headers
     def cms():
-        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` Welcome To CMS Part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
-        target = input(f"\n{Fore.YELLOW}[!]-{Fore.LIGHTBLUE_EX}┌─[Enter The Domain\n{Fore.LIGHTBLUE_EX}    └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
-        if target == "quit":
+        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to cms part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        target = input(f"\n{Fore.YELLOW}[!]-{Fore.LIGHTBLUE_EX}┌─[enter the domain\n{Fore.LIGHTBLUE_EX}    └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)
+
+        if target == "":
             exit()
         elif target == "0":
             import src.chdir
         elif 'https://' not in target and 'http://' not in target:
             target = 'http://'+target
+
         info = builtwith.parse(target)
+
         for name in info:
             value = ''
             for val in info[str(name)]:
                 name = name.replace('-',' ')
                 name = name.title()
-                value += str(val) 
+                value += str(val)
             print(Fore.YELLOW+"["+Fore.LIGHTRED_EX+"+"+Fore.YELLOW+"]- "+Fore.LIGHTBLUE_EX+name+' : '+value)
 
-        input(f'{Fore.YELLOW}[{Fore.LIGHTRED_EX}+{Fore.YELLOW}]- {Fore.LIGHTBLUE_EX}┌─[Press Enter to back ... \n{Fore.LIGHTBLUE_EX}     └──╼ {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
+        input(f'{Fore.YELLOW}[{Fore.LIGHTRED_EX}+{Fore.YELLOW}]- {Fore.LIGHTBLUE_EX}┌─[press enter to return\n{Fore.LIGHTBLUE_EX}     └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)

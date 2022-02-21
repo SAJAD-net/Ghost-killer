@@ -7,7 +7,7 @@ init()
 while True:
     @headers
     def finder():
-        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to url-finder part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to admin-page-finder part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
         try:
             #Gets url from user input
             url = input(f"\n{Fore.YELLOW}[!]-{Fore.LIGHTBLUE_EX}┌─[enter the website address ...\n{Fore.LIGHTBLUE_EX}    └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ "+Fore.LIGHTBLUE_EX)

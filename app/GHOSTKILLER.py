@@ -8,7 +8,7 @@ init()
 def GHOSTKILLER():
     while True:
         print(Fore.YELLOW+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+\
-        Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.0 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.5 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
 
         rednum = Fore.LIGHTRED_EX
         bluene = Fore.LIGHTBLUE_EX

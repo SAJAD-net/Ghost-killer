@@ -5,13 +5,12 @@ def headers(fun):
         from colorama import Fore,init
         init()
         print(Fore.RED+"""
-      ██████╗██╗  ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗ 
+      ██████╗██╗  ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗
     ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝   ██║ ██╔
     ██║  ███╗███████║██║   ██║███████╗   ██║█████╗█████╔╝
     ██║   ██║██╔══██║██║   ██║╚════██║   ██║╚════╝██╔═██╗
     ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║  ██╗
      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝""")
-        print(Fore.LIGHTBLUE_EX+"\t"*4,"Programmer :: "+Fore.YELLOW+"SAJAD-CHEHRAZI\n")
+        print(Fore.BLUE+"\t"*3,f"programmer {Fore.RED}: "+Fore.BLUE+"SAJAD-CHEHRAZI\n")
         fun()
     return wrapper()
-
