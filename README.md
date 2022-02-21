@@ -1,4 +1,4 @@
-# *Ghost-Killer* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  <img src="https://img.shields.io/badge/Python-up to date-red"></img>    <img src="https://img.shields.io/badge/version-0.5-yellow"></img>
+# *Ghost-Killer* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  <img src="https://img.shields.io/badge/Python-up to date-red"></img>    <img src="https://img.shields.io/badge/version-1.5-yellow"></img>
 
 
 ### *information gathering tool*
@@ -14,7 +14,7 @@
 	git clone https://github.com/SAJAD-net/Ghost-killer.git
 	cd 'Ghost-killer'
 	python3 installer.py
-	
+
 ## *Contributions*
 
 ***All contributions are welcome!***
