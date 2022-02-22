@@ -18,17 +18,18 @@ while True:
             elif url == "0":#if url equal to 0, return to the main window
                 import src.chdir
             elif 'https://' and 'http://' not in url:
-                url = 'http://'+url
+                url = 'https://'+url
 
             #Reads the finder.txt file and then sends the requests to sub pages
             with open("src/lib/finder.txt") as subpages:
                 for subpage in subpages.readlines():
                     r = requests.get(url+"/"+subpage)#sends the get request to url/<sub_page>
+
                     if r.status_code == 200: #If page exists print <page> [ok]
-                        print(f'{Fore.LIGHTBLUE_EX}[{Fore.LIGHTRED_EX}+{Fore.LIGHTBLUE_EX}]- {Fore.LIGHTBLUE_EX}{url}"/"{subpage} {Fore.LIGHTYELLOW_EX} [ok] ')
+                        print(f"{Fore.LIGHTBLUE_EX}[{Fore.LIGHTGREEN_EX}ok{Fore.LIGHTBLUE_EX}]- {Fore.LIGHTBLUE_EX}{url}/{subpage.strip()}")
 
                     else:
-                        print(f'{Fore.LIGHTRED_EX}[{Fore.LIGHTBLUE_EX}+{Fore.LIGHTRED_EX}]- {Fore.LIGHTBLUE_EX}{url}/{subpage} {Fore.LIGHTRED_EX} [no] ')
+                        print(f"{Fore.LIGHTYELLOW_EX}[{Fore.LIGHTRED_EX}no{Fore.LIGHTYELLOW_EX}]- {Fore.LIGHTBLUE_EX}{url}/{subpage.strip()}")
                 subpage.close()
 
                 input(f'{Fore.YELLOW}[{Fore.LIGHTRED_EX}+{Fore.YELLOW}]- {Fore.LIGHTBLUE_EX}┌─[press enter to return\n{Fore.LIGHTBLUE_EX}     └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
