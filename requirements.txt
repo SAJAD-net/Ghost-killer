@@ -1,0 +1,7 @@
+requests
+bs4
+ipapi
+python-whois
+builtwith
+colorama
+
