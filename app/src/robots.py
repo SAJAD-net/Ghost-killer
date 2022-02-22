@@ -24,9 +24,9 @@ while True:
                         ur = (url+"/"+line)
                         reqs = requests.get(ur)
                         if reqs.status_code == 200:
-                            print(Fore.YELLOW+"["+Fore.LIGHTRED_EX+"+"+Fore.YELLOW+"]- "+Fore.LIGHTBLUE_EX+ur)
+                            print(Fore.LIGHTBLUE_EX+"["+Fore.LIGHTGREEN_EX+"ok"+Fore.LIGHTBLUE_EX+"]- "+Fore.LIGHTBLUE_EX+ur.strip())
                         else:
-                            print(Fore.LIGHTRED_EX+"["+Fore.LIGHTBLUE_EX+"+"+Fore.LIGHTRED_EX+"]- "+Fore.LIGHTBLUE_EX+ur)
+                            print(Fore.LIGHTYELLOW_EX+"["+Fore.LIGHTRED_EX+"no"+Fore.LIGHTYELLOW_EX+"]- "+Fore.LIGHTBLUE_EX+ur.strip())
             input(f'{Fore.YELLOW}[{Fore.LIGHTRED_EX}+{Fore.YELLOW}]- {Fore.LIGHTBLUE_EX}┌─[press enter to return\n{Fore.LIGHTBLUE_EX}     └──> {Fore.YELLOW}GHOST-K {Fore.RED}✗ '+Fore.LIGHTBLUE_EX)
 
         except Exception:
