@@ -8,7 +8,7 @@
      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝  ╚═╝
 
 ### *information gathering tool*
-![ghost](https://user-images.githubusercontent.com/71703544/155109167-80e7a5ac-5606-4378-9430-f039ce597a3d.png)
+![ghost1 6](https://user-images.githubusercontent.com/71703544/167175299-20eb0ae1-c770-4cae-ba8b-dcebcaf5c499.png)
 
 ## *installation and usage*
 	git clone https://github.com/SAJAD-net/Ghost-killer.git
