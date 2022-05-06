@@ -1,4 +1,4 @@
-# *Ghost-Killer* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  <img src="https://img.shields.io/badge/Python-up to date-red"></img>    <img src="https://img.shields.io/badge/version-1.5-yellow"></img>
+# *Ghost-Killer* [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  <img src="https://img.shields.io/badge/Python-up to date-red"></img>    <img src="https://img.shields.io/badge/version-1.6-yellow"></img>
 
       ██████╗██╗  ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗
     ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝   ██║ ██╔
@@ -14,13 +14,7 @@
 	git clone https://github.com/SAJAD-net/Ghost-killer.git
 	cd 'Ghost-killer'
 	
-### installation on unix base systems
-	python3 installer.py
-	bash
-	ghost
-	
 ### run manually
-	cd app
 	pip3 install -r requirements.txt
-	python3 GHOSTKILLER.py
+	python3 app/GHOSTKILLER.py
 	
