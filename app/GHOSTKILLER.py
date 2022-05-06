@@ -1,14 +1,15 @@
 import os, sys, readline
-from src.Banner import headers
 from colorama import Fore,init
+from src.Banner import headers
 init()
 
 
 @headers
-def GHOSTKILLER():
+def main():
     while True:
         print(Fore.YELLOW+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+\
-        Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.5 `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
+        Fore.LIGHTBLUE_EX+"` Welcome To GHOST-KILLER (H4CK3R) V1.6 `"+\
+              Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")
 
         rednum = Fore.LIGHTRED_EX
         bluene = Fore.LIGHTBLUE_EX
@@ -20,31 +21,33 @@ def GHOSTKILLER():
         {rednum}[09]- {bluene}traceRoute 		{rednum}[10]- {bluene}sharedDns
         {rednum}[11]- {bluene}whois             \t{rednum}[12]- {bluene}adminPages""")
 
-        Self=input(Fore.YELLOW+'\n[!]-'+Fore.LIGHTBLUE_EX+' ┌─[choose the tool number ((:\n'+Fore.LIGHTBLUE_EX+'     └──> '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
+        self=input(Fore.YELLOW+'\n[!]-'+Fore.LIGHTBLUE_EX+\
+                   ' ┌─[choose the tool number ((:\n'+Fore.LIGHTBLUE_EX+\
+                   '     └──> '+Fore.YELLOW+'GHOST-K '+Fore.RED+'✗ '+Fore.LIGHTBLUE_EX)
 
-        if Self == '1':
+        if self == '1':
             import src.cloudflare.cloudeflare
-        elif Self == '2':
+        elif self == '2':
             import src.httpheaders.httpheaders
-        elif Self == '3':
+        elif self == '3':
             import src.iplocation.iplocation
-        elif Self == '4':
+        elif self == '4':
             import src.reversip.reversip
-        elif Self == '5':
+        elif self == '5':
             import src.dnslookup.dnslookup
-        elif Self == '6':
+        elif self == '6':
             import src.portscanner.portscanner
-        elif Self == '7':
+        elif self == '7':
             import src.cms.cms
-        elif Self == '8' :
+        elif self == '8' :
             import src.robots.robots
-        elif Self == '9' :
+        elif self == '9' :
             import src.traceroute.traceroute
-        elif Self == '10':
+        elif self == '10':
             import src.findsharedns.fsd
-        elif Self == '11':
+        elif self == '11':
             import src.whois.whois
-        elif Self == '12':
+        elif self == '12':
             import src.finder.finder
         else:
             sys.exit()
