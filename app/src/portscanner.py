@@ -1,10 +1,10 @@
-import sys,os
 import requests, readline
 from colorama import Fore,init
 init()
-import sys
-from src.Banner import headers
+from src.banner import headers
+
 while True:
+
     @headers
     def portscanner():
         print(Fore.LIGHTBLUE_EX+'[*]-',Fore.LIGHTBLUE_EX+"`"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"` welcome to port-scanner part `"+Fore.RED+"*"+Fore.LIGHTBLUE_EX+"`")

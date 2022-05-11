@@ -1,9 +1,10 @@
+import os
+from colorama import Fore,init
+init()
+
 def headers(fun):
-    import os
     def wrapper():
         os.system("clear") if os.name == "posix" else os.system('cls')
-        from colorama import Fore,init
-        init()
         print(Fore.RED+"""
       ██████╗██╗  ██╗ ██████╗ ███████╗████████╗   ██╗  ██╗
     ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝   ██║ ██╔

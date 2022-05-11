@@ -2,7 +2,7 @@ import requests, readline
 import time
 from colorama import Fore, init
 init()
-from src.Banner import headers
+from src.banner import headers
 
 while True:
 

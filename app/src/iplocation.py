@@ -1,8 +1,9 @@
-from colorama import Fore,init
-init()
-from src.Banner import headers
 import requests, readline
 import ipapi
+from colorama import Fore,init
+init()
+from src.banner import headers
+
 while True:
     @headers
     def ipLocation():

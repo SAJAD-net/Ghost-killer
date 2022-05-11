@@ -1,5 +1,5 @@
 import requests, readline
-from src.Banner import headers
+from src.banner import headers
 from colorama import Fore, init
 init()
 

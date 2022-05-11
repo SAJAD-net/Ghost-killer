@@ -1,7 +1,8 @@
 import requests, readline
 from colorama import Fore, init
 init()
-from src.Banner import headers
+from src.banner import headers
+
 while True:
     @headers
     def fsd():
