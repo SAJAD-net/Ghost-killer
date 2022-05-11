@@ -1,6 +1,6 @@
 import os, sys, readline
 from colorama import Fore,init
-from src.Banner import headers
+from src.banner import headers
 init()
 
 
